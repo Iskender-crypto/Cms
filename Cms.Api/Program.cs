@@ -22,7 +22,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataContext>(options =>
 {
-    options.UseNpgsql("Host=localhost;Port=5432;Database=Takamura;Username=iskender-crypto;Password=Iskndr-2003;Include Error Detail=true");
+    options.UseNpgsql("Host=localhost;Port=5432;Database=Cms;Username=root;Password=Iskndr-2003;Include Error Detail=true");
 });
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
